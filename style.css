@@ -1,0 +1,194 @@
+body{
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin-bottom: 0px;
+}
+.game-content{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.player{
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+.player--active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.name{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.score{
+    font-size: 8rem;
+    color: #c7365f;
+    margin-bottom: 80px;
+}
+.left-col{
+    border-radius: 8px;
+}
+.player--active .current{
+    opacity: 1;
+}
+.current{
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    padding: 8px 55px 8px 55px;
+    text-align: center;
+    transition: all 0.75s;
+}
+.current-label{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+}
+.current-score{
+    font-size: 2.5rem;
+}
+.dice{
+    position: absolute;
+    height: 100px;
+    left: 46%;
+    top: 33%;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.btn{
+    position: absolute;
+    left: 42%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem 2.5rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444;
+}
+.btn--new{
+    top: 3%;
+}
+.btn--roll{
+    top:72%;
+    left:43%;
+}
+.btn--hold{
+    top: 83%;
+    left: 44%;
+}
+.hidden{
+    display: none;
+}
+.player--winner {
+    background-color: #2f2f2f;
+}
+.player--winner .name {
+    font-weight: 700;
+    color: #c7365f;
+}
+
+
+/* Media Queries Start */
+@media (max-width: 575.98px) {
+    .player{
+        padding-top: 100px;
+    }
+    .btn--new{
+        left:30%;
+    }
+    .player--1{
+        padding-bottom: 269px;
+    }
+    .btn--roll{
+        top: 86%;
+        left: 30%;
+    }
+    .btn--hold {
+        top: 91%;
+        left: 34%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #name--0{
+        font-size: 50px;
+    }
+    #name--1{
+        font-size: 50px;
+    }
+    .current{
+        padding: 8px 20px 8px 20px
+    }
+    .current-label{
+        font-size: 16px;
+    }
+    .current-score{
+        font-size: 16px;
+    }
+    .btn--roll {
+        top: 72%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .btn--hold {
+        top: 83%;
+        left: 41%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .btn--new {
+        top: 2%;
+        font-size: 14px;
+        padding: 10px 15px;
+        left: 39%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .btn--roll {
+        top: 72%;
+        left: 42%;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .btn--hold {
+        top: 83%;
+        left: 43%;
+        padding: 10px 15px;
+    }
+    .btn--new {
+        top: 2%;
+        padding: 10px 15px;
+        left: 40%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .btn--roll {
+        top: 72%;
+        left: 41%;
+    }
+    .btn--hold {
+        top: 83%;
+        left: 42%;
+    }
+    .btn--new {
+        top: 2%;
+        left: 40%;
+    }   
+}
+/* Media Queries End */

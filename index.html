@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Roll A Dice Game Javascript Project</title>
+</head>
+<body>
+    <main>
+        <div class="container mt-5 game-content">
+            <div class="row">
+                <div class="col-sm-6 player--active left-col section--0">
+                    <section class="player player--0">
+                        <h2 class="name" id="name--0">Player 1</h2>
+                        <p class="score" id="score--0">43</p>
+                        <div class="current">
+                            <p class="current-label">current</p>
+                            <p class="current-score" id="current--0">0</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-6 right-col section--1">
+                    <section class="player player--1">
+                        <h2 class="name" id="name--1">Player 2</h2>
+                        <p class="score" id="score--1">44</p>
+                        <div class="current">
+                            <p class="current-label">current</p>
+                            <p class="current-score" id="current--1">0</p>
+                        </div>
+                    </section>
+                </div>
+                <img src="./asset/img/dice-6.png" class="dice" alt="dice">
+                <button class="btn btn--new">🔄 New game</button>
+                <button class="btn btn--roll">🎲 Roll dice</button>
+                <button class="btn btn--hold">📥 Hold</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
