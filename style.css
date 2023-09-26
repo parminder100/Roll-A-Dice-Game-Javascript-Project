@@ -103,7 +103,8 @@ h1,h2,h3,h4,h5,h6,p,ul{
 /* Media Queries Start */
 @media (max-width: 575.98px) {
     .player{
-        padding-top: 100px;
+        padding-top: 121px;
+        padding-bottom: 112px;
     }
     .btn--new{
         left:30%;
@@ -118,6 +119,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
     .btn--hold {
         top: 91%;
         left: 34%;
+    }
+    .dice{
+        left: 36%;
+        top: 42%;
     }
 }
 
@@ -156,6 +161,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
         padding: 10px 15px;
         left: 39%;
     }
+    .dice{
+        left: 41%;
+        top: 34%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -175,6 +184,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
         padding: 10px 15px;
         left: 40%;
     }
+    .dice{
+        left: 43%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -189,6 +201,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     .btn--new {
         top: 2%;
         left: 40%;
+    }
+    .dice{
+        left: 45%;
     }   
 }
 /* Media Queries End */
